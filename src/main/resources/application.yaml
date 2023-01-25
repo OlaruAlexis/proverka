@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/my_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: root1
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+  liquibase:
+    enabled: true
+    change-log: classpath:liquibase/db.changelog-master.yaml

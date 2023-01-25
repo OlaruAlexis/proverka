@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1674541462514-3
+      author: olaru (generated)
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_currency
+                  name: code_iso
+                  type: BIGINT
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: name_of_country
+                  type: VARCHAR(255)
+            tableName: currency
+

@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1674470000398-1
+      author: olaru (generated)
+      objectQuotingStrategy: QUOTE_ONLY_RESERVED_WORDS
+      changes:
+        - createTable:
+            columns:
+              - column:
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+                    primaryKeyName: pk_airports
+                  name: codeiata
+                  type: VARCHAR(255)
+              - column:
+                  name: name
+                  type: VARCHAR(255)
+              - column:
+                  name: name_of_country
+                  type: VARCHAR(255)
+            tableName: airports
+

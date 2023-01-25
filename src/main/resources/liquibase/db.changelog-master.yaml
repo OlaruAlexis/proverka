@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/28-01-changelog.yaml
+  - include:
+      file: liquibase/23-01-changelog.yaml
+  - include:
+      file: liquibase/24-01-changelog.yaml
